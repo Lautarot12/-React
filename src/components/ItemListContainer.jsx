@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import '../styles/itemlistcontainer.css'
 import { getProducts } from '../mock/AsyncService'
+import Itemlist from './ItemList'
 
 const ItemListContainer = (props)=>{
 
@@ -17,7 +18,8 @@ const ItemListContainer = (props)=>{
     return(
         <div>
             <h1 className="foto-hero">{props.children}</h1>
-            {data.map((product)=> <p>{product.name}</p>)}
+            {data.map((product, id)=> <p key={product.id}>{product.name}</p>)}
+            <Itemlist data={data}/>
         </div>
     )
 }
