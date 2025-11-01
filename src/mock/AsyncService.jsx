@@ -96,3 +96,14 @@ export const getProducts =() => {
     }, 2500) 
   })
 }
+
+
+export const getOneProduct = (id) => {
+  return new Promise ((resolve, reject)=> {
+    setTimeout(()=>{
+      let prod = productos.find((prod) => prod.id === id)
+      resolve(prod)
+      reject((error)=> console.error(error))
+    }, 2000)
+  }) 
+}

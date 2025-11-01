@@ -13,8 +13,6 @@ const ItemListContainer = (props)=>{
         .catch((error)=>console.log(error))
     }, [])
 
-    console.log(data, 'estado')
-
     return(
         <div>
             <h1 className="foto-hero">{props.children}</h1>
