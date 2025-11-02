@@ -6,7 +6,7 @@ const productos = [
         stock: 25,
         price: 60000,
         img: '../pollonoelma.jpeg',
-        category: 'Frescos'
+        category: 'frescos'
     },
   {
         id: '02',
@@ -15,7 +15,7 @@ const productos = [
         stock: 15,
         price: 65000,
         img: '../pollosanandres.webp',
-        category: 'Frescos'
+        category: 'frescos'
     },
       {
         id: '03',
@@ -24,7 +24,7 @@ const productos = [
         stock: 30,
         price: 50000,
         img: '../sanpedrocongelado.jpg',
-        category: 'Congelados'
+        category: 'congelados'
     },
       {
         id: '04',
@@ -33,7 +33,7 @@ const productos = [
         stock: 300,
         price: 5000,
         img: '../medallonpollojyq.jpg',
-        category: 'Precocidos'
+        category: 'precocidos'
     },
           {
         id: '05',
@@ -42,7 +42,7 @@ const productos = [
         stock: 300,
         price: 4500,
         img: '../medallonpescado.jpg',
-        category: 'Precocidos'
+        category: 'precocidos'
     },
           {
         id: '06',
@@ -51,7 +51,7 @@ const productos = [
         stock: 500,
         price: 5000,
         img: '../patitas.jpg',
-        category: 'Precocidos'
+        category: 'precocidos'
     },
           {
         id: '07',
@@ -60,7 +60,7 @@ const productos = [
         stock: 350,
         price: 6000,
         img: '../bastoncitos.jpg',
-        category: 'Precocidos'
+        category: 'precocidos'
     },
           {
         id: '08',
@@ -69,7 +69,7 @@ const productos = [
         stock: 300,
         price: 8000,
         img: '../filetdemerluzarebozado.png',
-        category: 'Precocidos'
+        category: 'precocidos'
     },
           {
         id: '09',
@@ -78,7 +78,7 @@ const productos = [
         stock: 400,
         price: 10000,
         img: '../filetalaromana.jpeg',
-        category: 'Precocidos'
+        category: 'precocidos'
     },
     
 
@@ -93,7 +93,7 @@ export const getProducts =() => {
       } else {
         resolve(productos)
       }
-    }, 2500) 
+    }, 1000) 
   })
 }
 
@@ -102,8 +102,12 @@ export const getOneProduct = (id) => {
   return new Promise ((resolve, reject)=> {
     setTimeout(()=>{
       let prod = productos.find((prod) => prod.id === id)
-      resolve(prod)
-      reject((error)=> console.error(error))
-    }, 2000)
+      if (prod) {
+        resolve(prod)
+      } else {
+        reject('Producto no encontrado')
+      }
+    }, 1000)
   }) 
 }
+

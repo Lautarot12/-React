@@ -2,21 +2,29 @@ import { useEffect, useState } from 'react'
 import '../styles/itemlistcontainer.css'
 import { getProducts } from '../mock/AsyncService'
 import Itemlist from './ItemList'
+import { useParams } from 'react-router-dom'
 
 const ItemListContainer = (props)=>{
 
     const [data, setData]= useState([])
+    const {type} = useParams()
+    console.log(type)
 
     useEffect(()=>{
         getProducts()
-        .then((res)=>setData(res))
+        .then((res)=> {
+            if(type){
+                setData(res.filter((producto)=> (producto.category === type)))
+            }else {
+                setData(res)
+            }
+        })
         .catch((error)=>console.log(error))
-    }, [])
+    }, [type])
 
     return(
         <div>
-            <h1 className="foto-hero">{props.children}</h1>
-            {data.map((product, id)=> <p key={product.id}>{product.name}</p>)}
+            <div className="foto-hero">{props.children}{type && <span className='text-capitalize'>{type}</span>}</div>
             <Itemlist data={data}/>
         </div>
     )
