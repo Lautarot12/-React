@@ -8,8 +8,7 @@ const ItemListContainer = (props)=>{
 
     const [data, setData]= useState([])
     const {type} = useParams()
-    console.log(type)
-
+    
     useEffect(()=>{
         getProducts()
         .then((res)=> {
