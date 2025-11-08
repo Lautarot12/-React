@@ -5,6 +5,7 @@ import NavBarBS from './components/NavBarBS';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Error from './components/Error';
+import ItemCount from './components/ItemCount';
 
 function App() {
 

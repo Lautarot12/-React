@@ -57,7 +57,7 @@ const productos = [
         id: '07',
         name: 'Bastoncitos de muzarella',
         description: 'Croquetas crujientes rellenas de muzzarella',
-        stock: 350,
+        stock: 3,
         price: 6000,
         img: '../bastoncitos.jpg',
         category: 'precocidos'
