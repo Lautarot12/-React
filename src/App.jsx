@@ -5,13 +5,14 @@ import NavBarBS from './components/NavBarBS';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Error from './components/Error';
-import ItemCount from './components/ItemCount';
+import { CartProvider } from './components/context/CartContext';
 
 function App() {
 
   return (
     <BrowserRouter>
       <NavBarBS/>
+      <CartProvider>
       <Routes>
         <Route path='/' element={ <ItemListContainer>
         <img className='foto-hero' src="../imagenheroindex.png" alt="Foto hero"/>
@@ -20,6 +21,7 @@ function App() {
           <Route path='/category/:type' element={<ItemListContainer/>}/>
           <Route path='*' element={<Error/>}/>
       </Routes>
+      </CartProvider>
     </BrowserRouter>
   )
 }
