@@ -7,7 +7,15 @@ export const CartProvider = ({children}) => {
 
     const addItem = (item, qty) => {
         if (isInCart(item.id)) {
-            console.log("El item ya esta en el carrito")
+            setCart(
+                cart.map((prod) => {
+                    if (prod.id === item.id) {
+                        return {...prod, quantity: prod.quantity + qty}
+                    } else {
+                        return prod
+                    }
+                })
+            )
             
         }else {
             setCart([...cart, {...item, quantity: qty}])
