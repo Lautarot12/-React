@@ -1,9 +1,16 @@
+import { FaShoppingCart } from "react-icons/fa"
+import { Badge } from "react-bootstrap"
+import { useContext } from "react"
+import { CartContext } from "./context/CartContext"
+
 const CartWidget = () => {
+    const { cartQuantity = () => 0, cart = [] } = useContext(CartContext) || {}
+    console.log(cart)
     return (
-        <div>
-            <span>🛒</span>
-            <span style={{color: 'white'}}>0</span>
-        </div>
+        <>
+        <FaShoppingCart fontSize={'1.3rem'}/>
+        <Badge pill bg="white" text="dark">{cartQuantity()}</Badge>
+        </>
     )
 }
 

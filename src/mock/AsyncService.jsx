@@ -1,6 +1,5 @@
 const productos = [
     {
-        id: '01',
         name: 'Pollo Noelma',
         description: 'Pollo fresco por caja de 20kg',
         stock: 25,

@@ -12,7 +12,7 @@ const ItemDetail = ({detalle}) => {
     const onAdd = (cantidad) => {
         console.log(cantidad)
         setPurchase(true)
-        addItem(detalle, cantidad)
+        addItem(detalle,cantidad)
     }
     return (
         <div>
