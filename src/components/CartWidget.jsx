@@ -5,11 +5,10 @@ import { CartContext } from "./context/CartContext"
 
 const CartWidget = () => {
     const { cartQuantity = () => 0, cart = [] } = useContext(CartContext) || {}
-    console.log(cart)
     return (
         <>
         <FaShoppingCart fontSize={'1.3rem'}/>
-        <Badge pill bg="white" text="dark">{cartQuantity()}</Badge>
+        {cart.length > 0 && <Badge pill bg="white" text="dark">{cartQuantity()}</Badge>}
         </>
     )
 }

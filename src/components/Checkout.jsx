@@ -47,7 +47,7 @@ const Checkout = () => {
 
     }
 
-    if(!cart.lenghth && !orderId){
+    if(!cart.length && !orderId){
         return <EmptyCart/>
     }
 
