@@ -1,0 +1,65 @@
+.itemCard {
+  width: 100%;
+  max-width: 260px;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  transition: all .25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.itemImageWrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itemInfo {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.itemTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.itemPrice {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #1a8917;
+}
+
+.itemButton {
+  margin-top: 6px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  padding: 9px 14px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background .25s ease;
+}
+
+.itemButton:hover {
+  background: #1e50c7;
+}

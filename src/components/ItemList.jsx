@@ -1,12 +1,18 @@
-import React from 'react'
-import Item from './Item'
+import React from "react";
+import Item from "./Item";
+import "../styles/ItemList.css";
 
-const Itemlist = ({data})=> {
-    return (
-        <div style={{display:'flex', justifyContent:'space-between', alignItems: 'center', flexWrap: 'wrap'}}>
-            {data.map((product)=> <Item key={product.id} product={product}/>)}
-        </div>
-    )
-}
+const ItemList = ({data}) => {
+  return (
+    <div className="catalogContainer">
+      {data.map(product => (
+        <Item
+          key={product.id}
+          product={product}
+        />
+      ))}
+    </div>
+  );
+};
 
-export default Itemlist
+export default ItemList;
