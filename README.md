@@ -34,4 +34,4 @@ Puedes ver el proyecto desplegado aqui: [Avicola Tello](https://react-ruddy-mu.v
 
 ## Autor
 
-Desarrollado por [Lautaro Tello] (https://github.com/Lautarot12)
+Desarrollado por [Lautaro Tello](https://github.com/Lautarot12)
