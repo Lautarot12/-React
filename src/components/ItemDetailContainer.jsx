@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
 
 
 
-    //Firebase
+
     useEffect(()=>{
         setCargando (true)
 
@@ -32,14 +32,6 @@ const ItemDetailContainer = () => {
         .finally(()=> setCargando(false))
     }, [param.id])
 
-    // useEffect(()=> {
-    //     setCargando(true)
-    //     getOneProduct(param.id)
-    //     .then((res)=> setDetalle(res))
-    //     .catch((error)=> console.error(error))
-    //     .finally(()=> setCargando(false))
-
-    // }, [param.id])
     if(invalid){
         return <div>
             <h1>El producto no existe</h1>

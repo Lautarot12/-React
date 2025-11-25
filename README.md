@@ -1,16 +1,21 @@
-# React + Vite
+# Avicola Tello
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ecommerce de una empresa local en San Martin, Mendoza. Creada para facilitar la venta y seguir los pedidos de manera mas ordenada, ademas de darle la posibilidad al cliente de hacer su pedido desde casa.
 
-Currently, two official plugins are available:
+### Instalacion
+1. Clone el repositorio
+2. Hacer el comando 'cd Lautarot12/-React para moverse a la carpeta raiz del proyecto'
+3. Instale dependencias con el comando 'npm install'
+4. Para levantar el proyecto de manera local ejecute el comando 'npm run dev'
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+### Version Host
+Si desea ver el proyecto online, puede ingresar al siguiente link [AvicolaTello] ()
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Librerias utilizadas
 
-## Expanding the ESLint configuration
+*Firebase: Utilizado como base de datos
+*React Router Dom: Utilizada para la navegacion por rutas del proyecto.
+*React Bootstrap: Styling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Desarrollado por Lautaro Tello

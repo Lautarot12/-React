@@ -57,13 +57,13 @@ const Checkout = () => {
         <>
         {
         orderId 
-        ? <div>
+        ? <div className="pageSection">
             <h2>Muchas gracias por su compra</h2>
             <h4>Su orden es: {orderId}</h4>
             <Link className='btn btn-dark' to='/'>Volver a Home</Link>
         </div>
         : <div>
-            <h1>Complete con sus datos</h1>
+            <h1 className="pageSection">Complete con sus datos</h1>
             {error && <span style={{color:'red', fontWeight:'bold'}}>{error}</span>}
             <form className='p-4 border rounded shadow-sm bg-light' onSubmit={finalizarCompra}>
                 <input className='form-control' name='name' type='text' placeholder='Ingresa tu nombre' onChange={buyerData}/>

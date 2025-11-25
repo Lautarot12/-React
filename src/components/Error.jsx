@@ -3,7 +3,7 @@ import {Link, Links} from 'react-router-dom'
 
 const Error = () => {
     return (
-        <div>
+        <div className="pageSection">
             <h1>Error no se encuentra la ruta</h1>
         <Link className='btn btn-dark' to='/'>Volver a la home</Link>
         </div>

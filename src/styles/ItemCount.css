@@ -1,0 +1,68 @@
+.countWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+/* Controles de + y - */
+.countControls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.countBtn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background: #f0f0f0;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.countBtn:hover {
+    background: #ffb703;
+    color: black;
+}
+
+/* Número del contador */
+.countNumber {
+    font-size: 1.4rem;
+    font-weight: bold;
+    min-width: 40px;
+    text-align: center;
+}
+
+/* Botón agregar */
+.addToCartBtn {
+    width: 100%;
+    padding: 14px 0;
+    background: #ffb703;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .2s ease, transform .2s ease;
+}
+
+.addToCartBtn:hover {
+    background: #faa307;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .countControls {
+        gap: 12px;
+    }
+
+    .countBtn {
+        width: 38px;
+        height: 38px;
+        font-size: 1.2rem;
+    }
+}

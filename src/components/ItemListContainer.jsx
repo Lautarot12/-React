@@ -14,12 +14,12 @@ const ItemListContainer = (props)=>{
     const {type}= useParams()
     
 
-    //Firebase
+
     useEffect(()=>{
         setLoader(true)
-        //connetarse a nuestra coleccion
+
         const productCollection = type ? query(collection(db, 'productos'), where('category', '==', type )) :collection(db, 'productos')
-        //pedir los documentos
+
         getDocs(productCollection)
         .then((res)=>{
 
@@ -36,28 +36,13 @@ const ItemListContainer = (props)=>{
     },[type])
     
 
-    // Promesa
-    // useEffect(()=>{
-    //     setLoader(true)
-    //     getProducts()
-    //     .then((res)=> {
-    //         if(type){
-    //             setData(res.filter((producto)=> (producto.category === type)))
-    //         }else {
-    //             setData(res)
-    //         }
-    //     })
-    //     .catch((error)=>console.log(error))
-    //     .finally(()=> setLoader(false))
-    // }, [type])
-
     return(
         <>
         {
             loader
             ? <LoaderComponent/>
             : <div>
-            <div className="foto-hero">{props.children}{type && <span className='text-capitalize' style={{fontSize: '2rem', fontWeight:'bold'}}>{type}</span>}</div>
+            <div className="foto-hero">{props.children}</div>
             <Itemlist data={data}/>
         </div>
         }
