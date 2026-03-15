@@ -1,37 +1,55 @@
-# Avicola Tello
+# Avicola Tello – React Ecommerce
 
-Ecommerce para una empresa local en San Martin, Mendoza. Diseñada para facilitar la venta de productos, organizar pedidos y permitir que los clientes hagan sus compras desde casa.
+This project is an ecommerce web application built for a local business in San Martin, Mendoza.  
+It allows customers to browse products, view product details and manage a shopping cart in a modern web interface.
 
-## Caracteristicas principales
+## Features
 
-* Catalogo dinamico conectado a Firebase
-* Navegacion fluida con React Router Dom
-* Animaciones suaves con Framer Motion
-* Componentes responsive con React Bootstrap
-* Carrito funcional con actualizacion en tiempo real
+- Dynamic product catalog connected to Firebase
+- Client-side routing with React Router
+- Smooth animations with Framer Motion
+- Responsive UI built with React Bootstrap
+- Functional shopping cart with real-time updates
+- Modern component-based architecture
 
-## Instalacion
+## Technologies Used
 
-1. Clonar este repositorio.
-2. Ejecutar `cd React` para entrar en la raiz del proyecto.
-3. Instalar dependencias con `npm install`.
-4. Iniciar el entorno de desarrollo con `npm run dev`.
+- React
+- JavaScript
+- React Router DOM
+- Firebase
+- React Bootstrap
+- Framer Motion
+- React Icons
+- React Slick
+- AOS
 
-## Version online
+## Installation
 
-Puedes ver el proyecto desplegado aqui: [Avicola Tello](https://react-ruddy-mu.vercel.app/)
+Clone the repository:
 
-## Librerias utilizadas
+git clone https://github.com/Lautarot12/-React
 
-* React
-* React Router Dom
-* Firebase
-* React Bootstrap
-* Framer Motion
-* React Icons
-* React Slick
-* AOS
 
-## Autor
+Navigate into the project folder:
 
-Desarrollado por [Lautaro Tello](https://github.com/Lautarot12)
+cd React
+
+
+Install dependencies:
+
+npm install
+
+
+Run the development server:
+
+npm run dev
+
+
+## Live Demo
+
+The project is deployed and available online.
+
+## Author
+
+Developed by Lautaro Tello
