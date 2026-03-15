@@ -1,7 +1,8 @@
 # Avicola Tello – React Ecommerce
 
-This project is an ecommerce web application built for a local business in San Martin, Mendoza.  
-It allows customers to browse products, view product details and manage a shopping cart in a modern web interface.
+This project is an ecommerce web application built for a local business in San Martin, Mendoza. It allows customers to browse products, view product details and manage a shopping cart in a modern interface.
+
+---
 
 ## Features
 
@@ -10,7 +11,9 @@ It allows customers to browse products, view product details and manage a shoppi
 - Smooth animations with Framer Motion
 - Responsive UI built with React Bootstrap
 - Functional shopping cart with real-time updates
-- Modern component-based architecture
+- Component-based architecture
+
+---
 
 ## Technologies Used
 
@@ -24,32 +27,41 @@ It allows customers to browse products, view product details and manage a shoppi
 - React Slick
 - AOS
 
+---
+
 ## Installation
 
-Clone the repository:
+Clone the repository
 
 git clone https://github.com/Lautarot12/-React
 
 
-Navigate into the project folder:
+Go to the project folder
 
 cd React
 
 
-Install dependencies:
+Install dependencies
 
 npm install
 
 
-Run the development server:
+Run the development server
 
 npm run dev
 
+
+---
 
 ## Live Demo
 
 The project is deployed and available online.
 
+---
+
 ## Author
 
-Developed by Lautaro Tello
+Developed by **Lautaro Tello**
+
+LinkedIn  
+https://linkedin.com/in/lautaro-tello-5a2832321
